@@ -51,7 +51,7 @@ function ResetPassword() {
                 >
                     <Form className={styles.form}>
                         <Typography color="primary" mb={6}>
-                            Please provide your email, and we'll dispatch an email containing instructions to restore your account.
+                            Please provide your email, and we&apos;ll dispatch an email containing instructions to restore your account.
                         </Typography>
                         <Field
                             id="email"
