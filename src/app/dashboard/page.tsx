@@ -417,7 +417,7 @@ function Dashboard() {
                             <Box className={styles.currentHistory}>
                                 <Typography variant="h5" my={2}>Current stats</Typography>
                                 {recentGames.map((game, index) => (
-                                    <Box sx={{width:"100%"}}>
+                                    <Box sx={{width:"100%"}} key={index}>
                                 <TableContainer key={index} sx={{width:"100%", borderRadius:"1rem", backgroundColor:"transparent"}} component={Paper}>
                                     <Table sx={{backgroundColor:"#00000066"}}>
                                         <TableHead sx={{backgroundColor:"#00000066"}}>

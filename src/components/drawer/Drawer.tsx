@@ -77,18 +77,6 @@ function MyDrawer({isOpen, onClose}: DrawerProps) {
                                 </ListItemButton>
                             </Link>
                         </ListItem>
-                        {item.icon2 && item.subtitle2 && item.href2 && (
-                            <ListItem key={`${index}_2`} disablePadding>
-                            <Link href={item.href2} className={styles.links}>
-                                <ListItemButton onClick={onClose}>
-                                    <ListItemIcon sx={{color: '#ffffff'}}>
-                                        {item.icon2}
-                                    </ListItemIcon>
-                                    <ListItemText sx={{color: '#ffffff'}} primary={item.subtitle2} primaryTypographyProps={{fontSize: "1rem"}} />
-                                </ListItemButton>
-                            </Link>
-                            </ListItem>
-                        )}
                     </Box>
                     ))}
                 </List>
