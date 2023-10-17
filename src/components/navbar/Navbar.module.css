@@ -6,7 +6,7 @@
     width: 100%;
     min-height: 5rem;
     max-height: 10rem;
-    background-color: red;
+    background: #EEEEEE;
 }
 .navbarUser {
     display: flex;
@@ -16,7 +16,7 @@
     max-height: 10rem;
     height: 100%;
     width: 100%;
-    background-color: red;
+    background: #EEEEEE;
 }
 .center {
     display: flex;

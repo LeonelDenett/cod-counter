@@ -47,10 +47,7 @@ function MyDrawer({isOpen, onClose}: DrawerProps) {
             header: "Cod",
             icon: <CreateRoundedIcon fontSize="large"/>,
             subtitle: "New game",
-            icon2:  <MilitaryTechIcon fontSize="large"/>,
-            subtitle2: "Historic",
             href: "/codi/dashboard",
-            href2: "/codi/historial"
 
         },
     ];
