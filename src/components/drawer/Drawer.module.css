@@ -1,0 +1,10 @@
+.drawerContainer {
+    display: flex;
+    flex-grow: 1;
+    min-width: 300px;
+    background: linear-gradient(to right, #f83600, #fe8c00);
+}
+.links {
+    text-decoration: none;
+    width: 100%;
+}

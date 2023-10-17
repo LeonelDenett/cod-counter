@@ -1,0 +1,57 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background: linear-gradient(to right, #f83600, #fe8c00);
+    text-align: center;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #00000066;
+    border: solid 2px #ffffff;
+    padding: 2rem;
+    border-radius: 2rem;
+    max-width: 27.5rem;
+}
+.dividerContainer {
+    margin-top: .5rem;
+}
+.divider {
+    height: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.resetPassword {
+    margin-top: 1rem;
+    gap: .5rem;
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+.signUp {
+    margin-top: 1rem;
+    gap: .5rem;
+}
+.none {
+    display: none;
+}
+.buttonContainer {
+    position: relative;
+    width: 80%;
+}
+.button {
+    width: 100%;
+}
+.icon {
+    color: #f83600;
+}

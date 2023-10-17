@@ -1,0 +1,23 @@
+.toastifySuccess {
+    background: linear-gradient(to right, #f83600, #fe8c00);
+    color: #ffffff;
+    border-radius: 1rem;
+    border: 2px solid #ffffff;
+    margin: 1rem;
+    text-align: center;
+    font-family: Bungee Inline, sans-serif;
+}
+.toastifyBar {
+    background-color: #ffffff;
+}
+.toastifyError {
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #f83600;
+    border-radius: 1rem;
+    border: 2px solid #f83600;
+    margin: 1rem;
+    background-image: linear-gradient(to right, #f83600, #fe8c00);
+    background-clip: content-box;
+}

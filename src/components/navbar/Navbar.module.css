@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    min-height: 5rem;
+    max-height: 10rem;
+    background-color: red;
+}
+.navbarUser {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 5rem;
+    max-height: 10rem;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

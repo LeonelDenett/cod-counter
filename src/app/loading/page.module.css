@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-height: 100vh;
+    padding: 2rem;
+    width: 100vw;
+    max-width: 100vw;
+    background: rgb(4,28,50);
+    background: linear-gradient(0deg, #041c32 0%, #0d83ba 50%, #041c32 100%);
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 60rem;
+    max-height: 60rem;
+    box-shadow: #112b3c 0px 0px 32px -6px;
+    border: 1px solid #e3f2fd;
+    background: #fe8c00;
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+    background: linear-gradient(to right, #f83600, #fe8c00);
+}
+.logoContainer{
+    position: absolute;
+    top: 0;
+    margin: 2rem;
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
