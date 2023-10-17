@@ -1,5 +1,5 @@
-// NextJs
-import Image from "next/image";
+"use client"
+
 // Styles
 import styles from "./page.module.css";
 // Mui Components
