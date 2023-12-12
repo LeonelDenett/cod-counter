@@ -31,7 +31,7 @@ export const AuthContextProvider = ({children}: AuthContextProps) => {
     // Logout
     const logout = () => {
         signOut(auth).then(() => {
-            router.push('/auth/login')
+            router.push('https://cod-counter.vercel.app/auth/login')
             console.log("logged out")
         }).catch((error) => {
             console.log("Logout error:", error)
@@ -63,6 +63,7 @@ export const AuthContextProvider = ({children}: AuthContextProps) => {
                 });
             }
         }).catch((error) => {
+            toastifyError({text:"Authentication Error"})
             console.log("Login error:", error);
         });
     };

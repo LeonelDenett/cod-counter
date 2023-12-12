@@ -13,11 +13,10 @@
 .toastifyError {
     text-align: center;
     font-weight: bold;
-    background-color: #ffffff;
-    color: #f83600;
+    background-color: #290001;
+    color: #efefef;
     border-radius: 1rem;
-    border: 2px solid #f83600;
+    border: 2px solid #efefef;
     margin: 1rem;
-    background-image: linear-gradient(to right, #f83600, #fe8c00);
     background-clip: content-box;
 }

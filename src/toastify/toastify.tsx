@@ -21,7 +21,7 @@ export const toastifySuccess = ({text}: ToastifyProps) => {
 export const toastifyError = ({text}: ToastifyProps) => {
     toast.error( text, {
         className: styles.toastifyError,
-        progressClassName: styles.toastifyBarError,
+        progressClassName: styles.toastifyBar,
         icon: <ErrorOutlineRoundedIcon color="primary" />
     })
 }
