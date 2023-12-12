@@ -5,6 +5,7 @@
     flex-grow: 1;
     background: linear-gradient(to right, #f83600, #fe8c00);
     text-align: center;
+    min-height: calc(100vh - 8rem);
 }
 .center {
     display: flex;
@@ -18,8 +19,8 @@
     flex-grow: 1;
     background-color: #00000066;
     border: solid 2px #ffffff;
-    padding: 2rem;
-    border-radius: 2rem;
+    padding: 1rem;
+    border-radius: 1.75rem;
     max-width: 27.5rem;
 }
 .dividerContainer {

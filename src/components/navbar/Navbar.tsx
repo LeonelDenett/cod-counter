@@ -34,17 +34,19 @@ function Navbar() {
     return (
         <Box sx={{ flexGrow: 1, display:"flex"}}>
             <AppBar position="static">
-                <Toolbar className={!user ? styles.navbar : ""}>
+                <Toolbar className={!user ? styles.navbar : styles.navbar}>
                     {
                         !user ? (
-                            <Typography variant='h6'>Cod Counter</Typography>
+                            <Box sx={{minHeight:"4rem", maxHeight:"4rem", display:"flex", alignItems:"center"}}>
+                                <Typography variant='h6' color="primary">Cod Counter</Typography>
+                            </Box>
                         ) : (
                             <Box className={styles.navbarUser}>
                                 <Box className={styles.center}>
                                     <IconButton
                                         size="large"
                                         edge="start"
-                                        color="inherit"
+                                        color="primary"
                                         aria-label="menu"
                                         onClick={openDrawer}
                                     >
@@ -53,7 +55,7 @@ function Navbar() {
                                     {/* Drawer */}
                                     <MyDrawer isOpen={isDrawerOpen} onClose={closeDrawer} />
                                     {/* User Info */}
-                                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                                    <Typography variant="h6" color={"primary"} component="div" sx={{ flexGrow: 1 }}>
                                         {user?.displayName}
                                     </Typography>
                                 </Box>

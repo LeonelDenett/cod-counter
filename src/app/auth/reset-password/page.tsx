@@ -30,7 +30,7 @@ function ResetPassword() {
     const { resetPassword, isButtonDisabled, secondsRemaining } = UserAuth();
 
     return (
-        <Box className={styles.main} sx={{padding: {xs:"2rem"}}}>
+        <Box className={styles.main} sx={{padding: {xs:"1rem"}}}>
             <Typography variant="h3" mb={2}>Reset your Password</Typography>
             <Box className={styles.container}>
                 <Formik

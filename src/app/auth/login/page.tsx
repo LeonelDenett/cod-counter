@@ -27,7 +27,7 @@ function Login() {
 
     return (
         <PublicRoute>
-            <Box className={styles.main} sx={{padding: {xs:"2rem"}}}>
+            <Box className={styles.main} sx={{padding: {xs:"1rem"}}}>
                 <Box className={styles.container}>
                     {/* Logo */}
                     <Logo/>

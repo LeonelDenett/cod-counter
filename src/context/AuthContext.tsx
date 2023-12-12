@@ -22,7 +22,7 @@ export const AuthContextProvider = ({children}: AuthContextProps) => {
     const loginWithGoogle = () => {
         const provider = new GoogleAuthProvider()
         signInWithPopup(auth, provider).then(() => {
-            router.push("/dashboard");
+            router.push("https://cod-counter.vercel.app/dashboard");
             console.log("logged with google");
         }).catch((error) => {
             console.log("Login with google error:", error)
@@ -42,7 +42,7 @@ export const AuthContextProvider = ({children}: AuthContextProps) => {
     const loginUser = (email: string, password: string, name: string) => {
         signInWithEmailAndPassword(auth, email, password).then(() => {
             console.log("logged with email and password");
-            router.replace("/dashboard");
+            router.replace("https://cod-counter.vercel.app/dashboard");
         }).catch((error) => {
             console.log("Login error:", error);
             toastifyError({text:"Authentication error, please verify your email and password"})
@@ -57,7 +57,7 @@ export const AuthContextProvider = ({children}: AuthContextProps) => {
                 updateProfile(user, profileData)
                 .then(() => {
                     toastifySuccess({text:"User created successfully"})
-                    router.replace("/dashboard");
+                    router.replace("https://cod-counter.vercel.app/dashboard");
                 }).catch((error) => {
                     toastifyError({text:"Error updating profile"})
                 });
@@ -70,20 +70,20 @@ export const AuthContextProvider = ({children}: AuthContextProps) => {
     const [isButtonDisabled, setIsButtonDisabled] = useState(false);
     const [secondsRemaining, setSecondsRemaining] = useState(60);
     const actionCodeSettings = {
-        url: 'http://localhost:3000/auth/login'
+        url: 'https://cod-counter.vercel.app/auth/login'
     }
     const resetPassword = (email: string) => {
         setIsButtonDisabled(true);
         sendPasswordResetEmail(auth, email, actionCodeSettings)
         .then(() => {
             toastifySuccess({text:"Email sent successfully. Please check your spam folder if you don't see it in your inbox"})
-            console.log("reset password good")
+            console.log("reset password successfully")
             startTimer();
-            router.push("/auth/signIn")
+            router.push("https://cod-counter.vercel.app/auth/login")
         })
         .catch(() => {
             toastifyError({text:"Oops, something went wrong while sending the email. Please double-check your email address and try again."})
-            console.log("reset password bad")
+            console.log("something went wrong")
         });
     }
 
@@ -99,6 +99,7 @@ export const AuthContextProvider = ({children}: AuthContextProps) => {
     }, 60000);
   };
 
+
     // Auth State
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -106,9 +107,9 @@ export const AuthContextProvider = ({children}: AuthContextProps) => {
             setUser(currentUser);
         });
         if (user) {
-            router.replace("/dashboard")
+            router.replace("https://cod-counter.vercel.app/")
         } else {
-            router.replace("/auth/login")
+            router.replace("https://cod-counter.vercel.app/auth/login")
         }
         return () => unsubscribe()
     }, []);
